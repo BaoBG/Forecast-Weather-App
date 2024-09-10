@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+    <div id="help-main">
+        <div id="help-board" class="box-blur">
+            <p>Click <span class="text-italic">"LOCATE"</span> auto generate
+                <span class="text-italic">LATITUDE and LONGTITUDE</span>
+                <br>
+                (allow website to use your location)
+            </p>
+
+            <button class="button-common">LOCATE</button>
+
+            <p>or fill in the
+                <span class="text-italic">LATITUDE and LONGTITUDE</span>
+                of your location
+            </p>
+
+            <div id="help-sub-board" class="box-blur">
+                <form style="
+                            display: flex; 
+                            flex-direction: column; 
+                            align-items: center; 
+                            gap: 10px;">
+                    <label for="">LATITUDE</label>
+                    <input class="input-common" type="text">
+                    <label for="">LONGTITUDE</label>
+                    <input class="input-common" type="text">
+
+                    <p>Click <span class="text-italic">
+                            "FORECAST"
+                        </span>
+                        to access the data</p>
+
+                    <input style="margin-top: 10px;" class="button-common" type="button" value="FORECAST"
+                        formaction="/get-forecast">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <%- include("partials/footer.ejs") %>

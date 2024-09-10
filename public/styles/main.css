@@ -1,0 +1,246 @@
+/* clear all styles in all browsers*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    color: white;
+    font-size: 20px;
+    background-image: url('../images/planet-earth-background.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+}
+
+#home-btn svg {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-board {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-location {
+    width: 300px;
+    height: 320px;
+    padding: 20px;
+}
+
+#space-station {
+    /* margin-top: 30vh; */
+    width: 356px;
+    height: 162px;
+    z-index: 0;
+    position: relative;
+    transition: all 0.5s;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* FORECAST */
+#cover-weather-board{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+}
+/* current weather = temperature + detail */
+#cover-current-weather {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.temperature-area {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+}
+
+.temperature-detail {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
+
+.detail-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* end current weather */
+
+#forecast-weather {
+    display: flex;
+    gap: 20px;
+}
+
+.weather-day-by-day {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.weather-day-by-day h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-weather-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.map-location {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* HELP PAGE */
+#help-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#help-board {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#help-sub-board {
+    width: 400px;
+    padding: 20px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+/* #help-board button input {
+    pointer-events: none;
+} */
+
+/* common components */
+.box-blur {
+    border-radius: 20px;
+    backdrop-filter: blur(9px);
+    box-shadow: 0 8px 32px rgba(226, 226, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button-common {
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(234, 234, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.button-common:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.button-common:active {
+    box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(216, 216, 216, 0.6);
+}
+
+.input-common {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(210, 210, 210);
+    font-family: 'Space Mono', monospace;
+    color: rgb(43, 43, 43);
+    padding: 0 20px 0 20px;
+}
+
+.input-common:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.input-common:hover {
+    background-color: rgb(255, 255, 255);
+}
