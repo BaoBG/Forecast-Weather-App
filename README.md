@@ -13,6 +13,5 @@ a weather app based on selected latitude and longitude - for educational purpose
    - Time API: https://www.timeapi.io/swagger/index.html
 
 #how to use the app 
-1.click "LOCATE" auto-generate LATITUDE and LONGITUDE (allow website to use your location) 
-or fill in the LATITUDE and LONGITUDE of your location
+1. click "LOCATE" auto-generate LATITUDE and LONGITUDE (allow website to use your location) or fill in the LATITUDE and LONGITUDE of your location
 2. click "FORECAST" to access the data
