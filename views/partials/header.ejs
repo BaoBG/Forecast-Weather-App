@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <style>
+        #map { height: 100%; }
+     </style>
     <title>Forecase Weather</title>
 </head>
 
@@ -110,4 +116,13 @@
                     </g>
                 </svg>
             </a></div>
+
+            <% if(locals.timeData) {%>
+                <p class="date-time">
+                  <%= timeData.dayOfWeek %>, <%= timeData.time %>
+                  <br>
+                  <%= timeData.date %>
+                </p>
+            
+              <% } %>
     </header>

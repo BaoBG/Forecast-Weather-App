@@ -22,6 +22,13 @@ body {
 
 header {
     height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header .date-time {
+    text-align: center;
+    margin: 0 auto;
 }
 
 #home-btn svg {
@@ -100,6 +107,20 @@ footer a {
     padding: 10px;
 }
 
+.temperature-area .temperature p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.temperature-area .symbol-weather svg{
+    width: 108px;
+    height: 108px;
+}
+
+.temperature-area .style-weather {
+    font-weight: bold;
+}
+
 .temperature-detail {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -113,6 +134,13 @@ footer a {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 /* end current weather */
 
@@ -149,23 +177,15 @@ footer a {
     padding: 10px;
 }
 
+.weather-card svg {
+    width: 96px;
+    height: 96px;
+}
+
 .map-location {
     width: 400px;
-    height: 200px;
-    padding: 10px;
-}
-
-.google-map {
-    padding-bottom: 50%;
-    position: relative;
-}
-
-.google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+    height: 300px;
+    padding: 20px;
 }
 
 /* HELP PAGE */
